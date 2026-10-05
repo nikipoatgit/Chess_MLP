@@ -1,0 +1,29 @@
+flowchart TD
+    User[User] --> Panel[RecommendationPanel\nPlay + Stockfish level]
+    Panel --> App[ChessApp]
+    App --> Loop[Automatic game loop]
+    Loop -->|White| MLP[ChessModel\nDL4J MLP]
+    Loop -->|Black| Policy[StockfishMovePolicy]
+    MLP --> Encoder[BoardEncoder\n1609 features]
+    MLP --> Weights[model/weights.zip\ntrained DL4J archive]
+    Policy --> Client[StockfishClient\nUCI process]
+    Loop --> Game[Game\nlegal moves + history + result]
+    MLP -->|legal Move| Game
+    Policy -->|legal Move| Game
+    Game --> Board[BoardView\nrender board]
+    Game --> Status[Status label\nwin, loss, or draw]
+    Board --> App
+    Status --> Panel
+
+    subgraph Runtime[Runtime boundary]
+        App
+        Loop
+        Game
+        Board
+        Panel
+    end
+
+    subgraph External[External dependencies]
+        Weights
+        Client
+    end

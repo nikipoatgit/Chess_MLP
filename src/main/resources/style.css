@@ -1,0 +1,366 @@
+/* Clean, compact desktop theme for ChessMind */
+
+.root {
+    -fx-font-family: "Avenir Next", "Segoe UI", Arial, sans-serif;
+    -fx-background-color: #f6f7f9;
+    -fx-text-fill: #1f2937;
+}
+
+.board-container {
+    -fx-background-color: #f8fafc;
+    -fx-padding: 12px;
+    -fx-background-radius: 8px;
+    -fx-border-color: #d1d5db;
+    -fx-border-radius: 8px;
+    -fx-border-width: 1px;
+}
+
+.piece-label {
+    -fx-font-size: 42px;
+    -fx-alignment: center;
+}
+
+.recommendation-panel {
+    -fx-background-color: #f8fafc;
+    -fx-border-color: #dfe3e8;
+    -fx-border-width: 0 0 0 1px;
+}
+
+.panel-title {
+    -fx-font-size: 20px;
+    -fx-font-weight: 700;
+    -fx-text-fill: #111827;
+}
+
+.card {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 8px;
+    -fx-padding: 16px;
+    -fx-border-color: #e3e7ed;
+    -fx-border-radius: 8px;
+    -fx-border-width: 1px;
+}
+
+.card-subtitle {
+    -fx-font-size: 11px;
+    -fx-font-weight: 700;
+    -fx-text-fill: #6b7280;
+}
+
+.status-text {
+    -fx-font-size: 14px;
+    -fx-font-weight: 700;
+    -fx-text-fill: #0f766e;
+}
+
+.muted-text {
+    -fx-font-size: 12px;
+    -fx-text-fill: #6b7280;
+    -fx-font-style: italic;
+}
+
+.move-name {
+    -fx-font-size: 13px;
+    -fx-font-weight: 600;
+    -fx-text-fill: #1f2937;
+}
+
+.prob-bar {
+    -fx-accent: #3b82f6;
+    -fx-pref-height: 10px;
+}
+
+.prob-text {
+    -fx-font-size: 12px;
+    -fx-text-fill: #4b5563;
+}
+
+.history-scroll {
+    -fx-background-color: transparent;
+    -fx-background: transparent;
+}
+
+.history-scroll .viewport {
+    -fx-background-color: transparent;
+}
+
+.history-num {
+    -fx-font-size: 12px;
+    -fx-text-fill: #6b7280;
+}
+
+.history-move {
+    -fx-font-size: 12px;
+    -fx-font-weight: 600;
+    -fx-text-fill: #374151;
+}
+
+.btn {
+    -fx-padding: 9px 14px;
+    -fx-background-radius: 6px;
+    -fx-border-radius: 6px;
+    -fx-border-color: #d5dbe3;
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #1f2937;
+    -fx-font-weight: 600;
+    -fx-cursor: hand;
+}
+
+.btn:hover {
+    -fx-background-color: #e2e8f0;
+}
+
+.btn:pressed {
+    -fx-background-color: #dbe3ed;
+}
+
+.btn-primary {
+    -fx-background-color: #2563eb;
+    -fx-border-color: #1d4ed8;
+    -fx-text-fill: white;
+}
+
+.btn-primary:hover {
+    -fx-background-color: #1d4ed8;
+}
+
+.btn-secondary {
+    -fx-background-color: #f8fafc;
+    -fx-text-fill: #1f2937;
+}
+
+.btn-danger {
+    -fx-background-color: #dc2626;
+    -fx-border-color: #b91c1c;
+    -fx-text-fill: white;
+}
+
+.btn-danger:hover {
+    -fx-background-color: #b91c1c;
+}
+
+.btn-accent {
+    -fx-background-color: #7c3aed;
+    -fx-border-color: #6d28d9;
+    -fx-text-fill: white;
+}
+
+.btn-accent:hover {
+    -fx-background-color: #6d28d9;
+}
+
+.btn-lg {
+    -fx-padding: 10px 18px;
+    -fx-font-size: 13px;
+}
+
+.tab-pane {
+    -fx-background-color: #f3f4f6;
+}
+
+.tab-pane .tab-header-area {
+    -fx-background-color: #ebedf0;
+    -fx-padding: 6px 10px 0 10px;
+    -fx-border-color: #d1d5db;
+    -fx-border-width: 0 0 1px 0;
+}
+
+.tab-pane .tab {
+    -fx-background-color: transparent;
+    -fx-background-radius: 6px 6px 0 0;
+    -fx-padding: 8px 16px;
+}
+
+.tab-pane .tab:selected {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #d1d5db #d1d5db transparent #d1d5db;
+    -fx-border-width: 1px 1px 0 1px;
+}
+
+.tab-pane .tab .tab-label {
+    -fx-text-fill: #4b5563;
+    -fx-font-weight: 600;
+    -fx-font-size: 13px;
+}
+
+.tab-pane .tab:selected .tab-label {
+    -fx-text-fill: #1f2937;
+}
+
+.training-view {
+    -fx-background-color: #f6f7f9;
+    -fx-padding: 18px;
+}
+
+.training-title {
+    -fx-font-size: 24px;
+    -fx-font-weight: 700;
+    -fx-text-fill: #111827;
+}
+
+.badge {
+    -fx-padding: 4px 10px;
+    -fx-background-radius: 12px;
+    -fx-font-size: 11px;
+    -fx-font-weight: 700;
+    -fx-text-fill: white;
+}
+
+.badge-idle {
+    -fx-background-color: #6b7280;
+}
+
+.badge-running {
+    -fx-background-color: #d97706;
+}
+
+.badge-success {
+    -fx-background-color: #059669;
+}
+
+.badge-stopped {
+    -fx-background-color: #dc2626;
+}
+
+.timer-label {
+    -fx-font-family: "Consolas", "Courier New", monospace;
+    -fx-font-size: 15px;
+    -fx-font-weight: 700;
+    -fx-text-fill: #1d4ed8;
+    -fx-background-color: #eef6ff;
+    -fx-padding: 4px 10px;
+    -fx-background-radius: 5px;
+    -fx-border-color: #bfdbfe;
+    -fx-border-radius: 5px;
+    -fx-border-width: 1px;
+}
+
+.field-label {
+    -fx-font-size: 11px;
+    -fx-font-weight: 700;
+    -fx-text-fill: #374151;
+}
+
+.substatus-text {
+    -fx-font-size: 13px;
+    -fx-font-weight: 700;
+    -fx-text-fill: #1d4ed8;
+}
+
+.text-input {
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #111827;
+    -fx-prompt-text-fill: #9ca3af;
+    -fx-border-color: #d5dbe3;
+    -fx-border-radius: 6px;
+    -fx-background-radius: 6px;
+    -fx-padding: 8px 10px;
+}
+
+.text-input:focused {
+    -fx-border-color: #2563eb;
+    -fx-effect: dropshadow(gaussian, rgba(37,99,235,0.18), 4, 0.2, 0, 0);
+}
+
+.spinner .text-field {
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #111827;
+    -fx-border-color: #d5dbe3;
+    -fx-border-radius: 6px 0 0 6px;
+    -fx-background-radius: 6px 0 0 6px;
+    -fx-padding: 8px 10px;
+}
+
+.spinner .increment-arrow-button,
+.spinner .decrement-arrow-button {
+    -fx-background-color: #f8fafc;
+    -fx-border-color: #d5dbe3;
+}
+
+.metric-card {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 8px;
+    -fx-border-color: #e3e7ed;
+    -fx-border-radius: 8px;
+    -fx-padding: 12px 16px;
+    -fx-min-width: 148px;
+}
+
+.metric-title {
+    -fx-font-size: 10px;
+    -fx-font-weight: 700;
+    -fx-text-fill: #6b7280;
+}
+
+.metric-value {
+    -fx-font-size: 20px;
+    -fx-font-weight: 700;
+    -fx-text-fill: #0f766e;
+    -fx-font-family: "Consolas", "Courier New", monospace;
+}
+
+.epoch-progress-bar {
+    -fx-accent: #10b981;
+    -fx-pref-height: 12px;
+}
+
+.batch-progress-bar {
+    -fx-accent: #3b82f6;
+    -fx-pref-height: 10px;
+}
+
+.terminal-area {
+    -fx-font-family: "Consolas", "Courier New", monospace;
+    -fx-font-size: 11px;
+    -fx-text-fill: #1f2937;
+    -fx-background-color: #f8fafc;
+    -fx-border-color: #d1d5db;
+    -fx-border-radius: 6px;
+}
+
+.terminal-area .content {
+    -fx-background-color: #f8fafc;
+}
+
+.loss-chart {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 8px;
+    -fx-border-color: #e3e7ed;
+    -fx-border-radius: 8px;
+    -fx-padding: 8px;
+}
+
+.loss-chart .chart-plot-background {
+    -fx-background-color: #f9fafb;
+}
+
+.loss-chart .chart-vertical-grid-lines,
+.loss-chart .chart-horizontal-grid-lines {
+    -fx-stroke: #e5e7eb;
+}
+
+.loss-chart .axis-label {
+    -fx-text-fill: #4b5563;
+    -fx-font-size: 11px;
+}
+
+.loss-chart .axis {
+    -fx-tick-label-fill: #6b7280;
+}
+
+.loss-chart .chart-title {
+    -fx-text-fill: #111827;
+    -fx-font-size: 13px;
+    -fx-font-weight: 700;
+}
+
+.default-color0.chart-series-line {
+    -fx-stroke: #f59e0b;
+    -fx-stroke-width: 2px;
+}
+
+.default-color1.chart-series-line {
+    -fx-stroke: #3b82f6;
+    -fx-stroke-width: 2.5px;
+}
+
